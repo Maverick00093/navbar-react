@@ -156,9 +156,9 @@ const CricketInventory = () => {
 
   const filteredItems = sortedItems.filter(
     (item) =>
-      item.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      item.brand.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      item.category.toLowerCase().includes(searchTerm.toLowerCase())
+      item.name.toLowerCase().includes(searchTerm.toLowerCase().trim()) ||
+      item.brand.toLowerCase().includes(searchTerm.toLowerCase().trim()) ||
+      item.category.toLowerCase().includes(searchTerm.toLowerCase().trim())
   );
 
   return (
